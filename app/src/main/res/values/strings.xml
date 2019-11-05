@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AndroidFundamentals</string>
+    <string name="hello_android">Hello Android !</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="email_field_hint">Email field</string>
 </resources>
