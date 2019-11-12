@@ -3,4 +3,8 @@
     <string name="hello_android">Hello Android !</string>
     <string name="remember_me">Remember Me</string>
     <string name="email_field_hint">Email field</string>
+    <string name="login">login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="submit">submit</string>
 </resources>

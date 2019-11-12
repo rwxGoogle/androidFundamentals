@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/blue">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="@dimen/small_dimen_margin"
+                android:text="Hello FrameLayout"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="Hello FrameLayout kjkahjshjdhhsakjhdhkhakdjakk"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/green">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Atelierul Google"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/fundamentals_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:text="Fundamentals "
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/fundamentals_text_view"
+                android:text="Android"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Google"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="BDD (Cucumber) allows for team collaboration early in the planning and development phases. Keep the numbers down. Ask yourself and the team: “If I can write a low-level test for this user story, should I write an UI acceptance test?” We should automate only the things that need to be automated at the UI level. It is a known fact that low-level tests are more reliable compared to UI tests. Cucumber is code, and all types of programming require thoughts upfront before writing automated tests. It is so important to lay a test automation foundation that embraces coding standards and follows design patterns that everyone will follow during automation development." />
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            tools:ignore="WebViewLayout" />
+    </LinearLayout>
+</ScrollView>
