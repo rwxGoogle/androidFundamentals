@@ -6,4 +6,5 @@
     <dimen name="mid_text_size">32sp</dimen>
     <dimen name="text_size_26sp">26sp</dimen>
     <dimen name="big_dimen_margin_top">40dp</dimen>
+    <dimen name="medium_text_size_18">18sp</dimen>
 </resources>

@@ -1,13 +1,14 @@
-package com.example.helloandroid.adapters;
+package com.example.androidfundamentals.adapters;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.helloandroid.R;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.androidfundamentals.R;
 
 import java.util.List;
 
@@ -43,16 +44,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     static class RecycleViewHolder extends RecyclerView.ViewHolder {
 
         final TextView carNameTextView;
-        final TextView carNameTextView1;
-        final TextView carNameTextView2;
-        final TextView carNameName;
 
         RecycleViewHolder(@NonNull View itemView) {
             super(itemView);
             this.carNameTextView = itemView.findViewById(R.id.car_name);
-            this.carNameTextView1 = itemView.findViewById(R.id.name);
-            this.carNameTextView2 = itemView.findViewById(R.id.name1);
-            this.carNameName = itemView.findViewById(R.id.name2);
         }
     }
 }

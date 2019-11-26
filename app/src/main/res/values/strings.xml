@@ -7,4 +7,6 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="submit">submit</string>
+    <string name="cars_of_the_day">Cars Of The Day</string>
+    <string name="update_car">Update car</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.helloandroid.data;
+package com.example.androidfundamentals.data;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,6 @@ public class DataSource {
         cars.add("Alfa romeo");
         cars.add("Lambo");
         cars.add("Ford");
-        cars.add("Dacia");
 
         return cars;
     }
