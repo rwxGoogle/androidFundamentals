@@ -11,13 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ActivitySecondLifecycle5"/>
+        <activity
+            android:name=".TabbedActivity6"
+            android:label="@string/title_activity_tabbed6"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".NavigationActivity6"
+            android:label="@string/title_activity_navigation6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ActivityLifecycle5" />
+        <activity android:name=".ActivitySecondLifecycle5" />
         <activity android:name=".CarList4Activity" />
         <activity android:name=".Login3Activity" />
         <activity android:name=".Main3Activity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".CarsOfTheDay4Activity" />
-        <activity android:name=".ActivityLifecycle5">
+        <activity android:name=".ActivityForFragments6">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
