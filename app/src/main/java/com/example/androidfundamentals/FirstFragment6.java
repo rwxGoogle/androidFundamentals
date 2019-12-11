@@ -33,10 +33,6 @@ public class FirstFragment6 extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG, "onCreate");
-
-        if (getArguments() != null) {
-            text = getArguments().getString(ActivityForFragments6.KEY);
-        }
     }
 
     @Override

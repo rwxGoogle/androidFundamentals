@@ -24,8 +24,6 @@ public class Example4Activity extends AppCompatActivity implements Listener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example4);
 
-        setAnimation();
-
 //        this.isLandscape = findViewById(R.id.detail) != null;
 //
 //        if (savedInstanceState == null) {
@@ -86,13 +84,5 @@ public class Example4Activity extends AppCompatActivity implements Listener {
         } else {
             super.onBackPressed();
         }
-    }
-
-    private void setAnimation() {
-        Button linearLayout = (Button) findViewById(R.id.animation_button);
-        AnimationDrawable animationDrawable = (AnimationDrawable) linearLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(2500);
-        animationDrawable.setExitFadeDuration(5000);
-        animationDrawable.start();
     }
 }

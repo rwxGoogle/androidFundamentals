@@ -29,4 +29,7 @@
     <string name="title_activity_tabbed6">TabbedActivity6</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="error_occured">Error Occured</string>
+    <string name="retry">Retry</string>
+    <string name="retry_message">This is an error, please retry!!</string>
 </resources>
