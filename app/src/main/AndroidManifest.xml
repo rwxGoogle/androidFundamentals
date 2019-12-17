@@ -4,6 +4,7 @@
     package="com.example.androidfundamentals">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="false"
@@ -20,7 +21,8 @@
         <activity android:name=".Main3Activity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".CarsOfTheDay4Activity" />
-        <activity android:name=".StylesActivity7">
+        <activity android:name=".StylesActivity7" />
+        <activity android:name=".example8.RetrofitMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
