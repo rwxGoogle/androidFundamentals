@@ -17,6 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitMainActivity extends AppCompatActivity {
 
+    private static final String TAG = RetrofitMainActivity.class.getSimpleName();
     private static final String BASE_URL = "https://raw.githubusercontent.com/";
     private static Retrofit retrofit;
 
@@ -26,12 +27,17 @@ public class RetrofitMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_retofit_main_activity);
 
         PersonApi api = getRetrofit().create(PersonApi.class);
-        Call<List<User>> persons = api.getPersons("test_json1");
+        Call<List<User>> persons = api.getPersons("test_json2");
         persons.enqueue(new Callback<List<User>>() {
             @Override
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {
                 if (response.isSuccessful()) {
                     Log.d("Response", response.body().toString());
+                    List<User> users = response.body();
+
+                    for (User user : users){
+                        Log.d(TAG, "User name: " + user.getName());
+                    }
                 } else {
 
                     Log.d("Response", "Response code " + response.code());
