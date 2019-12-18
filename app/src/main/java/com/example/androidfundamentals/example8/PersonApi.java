@@ -10,4 +10,7 @@ public interface PersonApi {
 
     @GET("/rwxGoogle/androidFundamentals/master/{fileName}")
     Call<List<User>> getPersons(@Path("fileName") String jsonToFetch);
+
+    @GET("/rwxGoogle/androidFundamentals/master/{fileName}")
+    Call<School> getSchool(@Path("fileName") String jsonToFetch);
 }

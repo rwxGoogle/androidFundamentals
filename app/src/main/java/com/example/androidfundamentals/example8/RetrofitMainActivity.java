@@ -35,7 +35,7 @@ public class RetrofitMainActivity extends AppCompatActivity {
                     Log.d("Response", response.body().toString());
                     List<User> users = response.body();
 
-                    for (User user : users){
+                    for (User user : users) {
                         Log.d(TAG, "User name: " + user.getName());
                     }
                 } else {
@@ -47,6 +47,29 @@ public class RetrofitMainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<User>> call, Throwable t) {
                 Log.w("Response", "Error in call", t);
+            }
+        });
+
+
+        Call<School> schoolCall = api.getSchool("test_json3");
+        schoolCall.enqueue(new Callback<School>() {
+            @Override
+            public void onResponse(Call<School> call, Response<School> response) {
+                if (response.isSuccessful()) {
+                    Log.d(TAG, "School:" + response.body().toString());
+
+                    School school = response.body();
+
+                    Log.d(TAG, "School name: " + school.getId());
+
+                } else {
+                    Log.d(TAG, "Responde code=" + response.code() + "responde message= " + response.message());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<School> call, Throwable t) {
+                Log.d(TAG, "onFailure: ");
             }
         });
     }
