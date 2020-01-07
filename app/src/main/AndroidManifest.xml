@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AndroidFundamentalsTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".example9.SharedPrefActivity"/>
         <activity android:name=".ActivityLifecycle5" />
         <activity android:name=".ActivitySecondLifecycle5" />
         <activity android:name=".CarList4Activity" />
@@ -23,7 +24,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".CarsOfTheDay4Activity" />
         <activity android:name=".StylesActivity7" />
-        <activity android:name=".example8.RetrofitMainActivity">
+        <activity android:name=".example8.RetrofitMainActivity" />
+        <activity android:name=".example9.RoomActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
